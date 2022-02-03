@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">Hello students, welcome to the HAU Grade Book!</p>
+              <hr>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <input type="text" [(ngModel)]="studName1" placeholder="Name" aria-label="Name">
+                </div>
+                <div class="col-sm">
+                  <input type="text" [(ngModel)]="subject1" placeholder="Subject" aria-label="Subject">
+                </div>
+                <div class="col-sm">
+                  <input type="text" [(ngModel)]="section1" placeholder="Section" aria-label="Section">
+                </div>
+              </div>
+              <br>
+                <input type="number" [(ngModel)]="prelim1" class="form-control" placeholder="Prelim Grade"/>
+                <br>
+                <input type="number" [(ngModel)]="midterm1" class="form-control" placeholder="Midterm Grade"/>
+                <br>
+                <input type="number" [(ngModel)]="final1" class="form-control" placeholder="Final Grade"/>
+                <br>
+                <p>Prelim Grade:{{prelim1}}</p>
+                <p>Midterm Grade:{{midterm1}}</p>
+                <p>Final Grade:{{final1}}</p>
+                <p>Average: {{(this.prelim1 + this.midterm1 + this.final1)/3}}</p>
+                <p>Good morning,{{studName1}} from {{section1}} with Student Number {{studentNumber1}} your final average for {{subject1}} is {{(this.prelim1 + this.midterm1 + this.final1)/3}}</p>
+            </div>
+          </div>
+        
+</body>
+</html>
