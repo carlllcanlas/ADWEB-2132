@@ -1,0 +1,11 @@
+.container{
+    position: absolute;
+
+    top: 30%;
+    left: 20%; 
+}
+#prod-dimage{
+    width: 100%;
+    height: 100%;
+
+}
