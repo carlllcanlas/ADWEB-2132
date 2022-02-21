@@ -1,0 +1,36 @@
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kard{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .default {
+    border-color: #e7e7e7;
+    color: white;
+
+  }
+  .default:hover {
+    background: black;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  
+  
